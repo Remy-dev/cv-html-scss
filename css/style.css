@@ -31,11 +31,6 @@ ul {
   list-style: none;
 }
 
-a {
-  color: var(--text);
-  text-decoration: none;
-}
-
 img {
   max-width: 100%;
 }
@@ -48,7 +43,6 @@ img {
   letter-spacing: 0.5rem;
   font-size: 1.7rem;
 }
-
 .text-primary {
   color: var(--primary);
 }
@@ -155,7 +149,7 @@ header p {
 }
 @media (max-width: 480px) {
   .picture img {
-    width: 250px;
+    width: 200px;
   }
 }
 
@@ -190,7 +184,7 @@ main .experience .timeline {
 @media (max-width: 480px) {
   main .experience .timeline {
     border: none;
-    align-self: center;
+    width: auto;
   }
 }
 main .experience .timeline p {
@@ -198,11 +192,16 @@ main .experience .timeline p {
 }
 @media (max-width: 480px) {
   main .experience .timeline p {
-    flex: auto;
+    width: auto;
   }
 }
 main .experience .content {
   padding: 0 1rem;
+}
+@media (max-width: 480px) {
+  main .experience .content {
+    padding: 0;
+  }
 }
 main .experience .content h3 {
   margin: 0;

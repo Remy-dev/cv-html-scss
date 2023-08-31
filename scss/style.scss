@@ -68,7 +68,7 @@ header {
   img {
     border-radius: 50%;
     @include xs {
-      width: 250px;
+      width: 200px;
     }
   }
 }
@@ -76,9 +76,11 @@ header {
 main {
   grid-area: main;
   padding: 5rem;
+
   h2 {
     margin-bottom: 4rem;
   }
+
   p {
     letter-spacing: 0.1rem;
     line-height: 3rem;
@@ -98,17 +100,20 @@ main {
       width: 20rem;
       @include xs {
         border: none;
-        align-self: center;
+        width: auto;
       }
       p {
         width: 12rem;
         @include xs {
-          flex: auto;
+          width: auto;
         }
       }
     }
     .content {
       padding: 0 1rem;
+      @include xs {
+        padding: 0;
+      }
       h3 {
         margin: 0;
       }
