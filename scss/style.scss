@@ -86,12 +86,26 @@ main {
   .experience {
     display: flex;
     margin: 6rem 0;
+    @include xs {
+      flex-direction: column;
+    }
     .timeline {
       margin: 0;
       text-align: center;
       color: var(--hint);
       padding-right: 2rem;
       border-right: 1px solid var(--border);
+      width: 20rem;
+      @include xs {
+        border: none;
+        align-self: center;
+      }
+      p {
+        width: 12rem;
+        @include xs {
+          flex: auto;
+        }
+      }
     }
     .content {
       padding: 0 1rem;

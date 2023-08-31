@@ -174,12 +174,32 @@ main .experience {
   display: flex;
   margin: 6rem 0;
 }
+@media (max-width: 480px) {
+  main .experience {
+    flex-direction: column;
+  }
+}
 main .experience .timeline {
   margin: 0;
   text-align: center;
   color: var(--hint);
   padding-right: 2rem;
   border-right: 1px solid var(--border);
+  width: 20rem;
+}
+@media (max-width: 480px) {
+  main .experience .timeline {
+    border: none;
+    align-self: center;
+  }
+}
+main .experience .timeline p {
+  width: 12rem;
+}
+@media (max-width: 480px) {
+  main .experience .timeline p {
+    flex: auto;
+  }
 }
 main .experience .content {
   padding: 0 1rem;
