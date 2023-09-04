@@ -88,31 +88,40 @@ main {
   .experience {
     display: flex;
     margin: 6rem 0;
+
     @include xs {
       flex-direction: column;
     }
+    @include xl {
+      width: 970px;
+    }
+
     .timeline {
       margin: 0;
       text-align: center;
       color: var(--hint);
       padding-right: 2rem;
       border-right: 1px solid var(--border);
-      width: 20rem;
+      width: 200px;
       @include xs {
         border: none;
         width: auto;
       }
+
       p {
-        width: 12rem;
+        width: 120px;
         @include xs {
           width: auto;
         }
       }
     }
     .content {
-      padding: 0 1rem;
+      padding: 0 10px;
       @include xs {
         padding: 0;
+      }
+      @include xl {
+        flex-grow: 0;
       }
       h3 {
         margin: 0;
@@ -123,7 +132,7 @@ main {
       ul {
         margin: 2rem 0;
         list-style: circle;
-        padding-left: 4rem;
+        padding-left: 40px;
       }
     }
   }

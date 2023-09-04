@@ -54,6 +54,10 @@ img {
   color: var(--bold-hint);
 }
 
+.job {
+  font-size: xx-large;
+}
+
 .mb-5 {
   margin-bottom: 5rem !important;
 }
@@ -173,13 +177,18 @@ main .experience {
     flex-direction: column;
   }
 }
+@media (min-width: 1200px) {
+  main .experience {
+    width: 970px;
+  }
+}
 main .experience .timeline {
   margin: 0;
   text-align: center;
   color: var(--hint);
   padding-right: 2rem;
   border-right: 1px solid var(--border);
-  width: 20rem;
+  width: 200px;
 }
 @media (max-width: 480px) {
   main .experience .timeline {
@@ -188,7 +197,7 @@ main .experience .timeline {
   }
 }
 main .experience .timeline p {
-  width: 12rem;
+  width: 120px;
 }
 @media (max-width: 480px) {
   main .experience .timeline p {
@@ -196,11 +205,16 @@ main .experience .timeline p {
   }
 }
 main .experience .content {
-  padding: 0 1rem;
+  padding: 0 10px;
 }
 @media (max-width: 480px) {
   main .experience .content {
     padding: 0;
+  }
+}
+@media (min-width: 1200px) {
+  main .experience .content {
+    flex-grow: 0;
   }
 }
 main .experience .content h3 {
@@ -212,7 +226,7 @@ main .experience .content p {
 main .experience .content ul {
   margin: 2rem 0;
   list-style: circle;
-  padding-left: 4rem;
+  padding-left: 40px;
 }
 
 aside {
